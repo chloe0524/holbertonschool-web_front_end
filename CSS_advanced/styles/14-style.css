@@ -63,10 +63,7 @@ a:active
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
-.section-tagline
-{
-    color: var(--color-primary)
-}
+
 
 :root {
     --color-primary: #d73953;

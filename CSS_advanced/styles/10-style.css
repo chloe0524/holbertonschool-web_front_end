@@ -37,10 +37,6 @@ a
 {
     color: var(--color-primary)
 }
-.section-tagline
-{
-    color: var(--color-primary)
-}
 
 :root {
     --color-primary: #d73953;
