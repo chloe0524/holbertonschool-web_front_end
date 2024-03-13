@@ -123,8 +123,47 @@ a:active
     --section-footer-align: center;
     --footer-padding: 5rem 0 1rem;
 
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
+    --section-tagline-margin: 0;
+}
+.navbar-menu
+{
+    float: right;
 }
 
+.nav
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+  
+.nav .nav-item
+{
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+.nav .nav-link
+{
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav .nav-link:hover 
+{
+    color: var(--nav-item-link-hover);
+}
 
 h6, h5, h4, h3, h2, h1
 {
@@ -135,4 +174,35 @@ h6, h5, h4, h3, h2, h1
 .footer 
 {
     padding: var(--footer-padding);
+}
+ul.row
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.col-1-3, .col-1-2
+{
+    float: left;
+    padding: 0.5rem;
+}
+
+.footer-copyright
+{
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.footer ul
+{
+    text-align: right;
+}
+
+.row::after
+{
+    content: "";
+    display: table;
+    clear: both;
 }
